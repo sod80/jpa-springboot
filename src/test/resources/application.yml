@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    #type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+
+    #driver-class-name: org.h2.Driver #org.springframework.jdbc.datasource.DriverManagerDataSource
+    initialization-mode: never #Stop data.sql from being loaded
+
+  h2:
+    console:
+      enabled: false
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create-drop

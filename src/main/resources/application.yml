@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    #type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:file:./src/main/resources/h2/db;
+    username: sa
+    password:
+
+    #driver-class-name: org.h2.Driver #org.springframework.jdbc.datasource.DriverManagerDataSource
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
